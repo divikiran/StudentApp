@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" 
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                  x:Class="StudentApp.Views.MasterDetail.MasterDetails1Page" 
+
+                  Title="Master Page" Icon="burger.png">
+    <MasterDetailPage.Master Icon="burger.png">
+        <ContentPage Title="List" Icon="burger.png">
+            <StackLayout>
+                <ListView x:Name="listview" ItemSelected="Handle_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}" Detail="{Binding Address}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+       <ContentPage/>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

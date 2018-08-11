@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="StudentApp.Views.AbsoluteLayoutsTest" Padding="0,20,0,0">
+    <AbsoluteLayout>
+        <Label Text="I am top of the page" AbsoluteLayout.LayoutBounds="0.5,0.3, 200, 100" AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <BoxView BackgroundColor="Teal" AbsoluteLayout.LayoutBounds=".5,0,.5,.1" AbsoluteLayout.LayoutFlags="All"  />
+        <BoxView BackgroundColor="Red" AbsoluteLayout.LayoutBounds=".5,1, 0.5,.1" AbsoluteLayout.LayoutFlags="All"/>
+
+        <BoxView BackgroundColor="Purple" AbsoluteLayout.LayoutBounds="0,0.5,20,100" AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <BoxView BackgroundColor="Olive" AbsoluteLayout.LayoutBounds="1,0.5,20,100" AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+         <BoxView BackgroundColor="Navy" AbsoluteLayout.LayoutBounds="10,50,.5,.2" AbsoluteLayout.LayoutFlags="SizeProportional" />
+
+    </AbsoluteLayout>
+</ContentPage>

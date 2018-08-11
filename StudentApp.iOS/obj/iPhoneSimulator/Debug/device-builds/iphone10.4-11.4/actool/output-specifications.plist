@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>bundle-id</key>
+		<string>com.school.studentapp.StudentApp.asset-pack-2XQP88MTRNGMY</string>
+		<key>bundle-path</key>
+		<string>/Users/divikiranravela/Documents/GitHub/StudentApp/StudentApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.4/actool/OnDemandResources/com.school.studentapp.StudentApp.BurgerIcon.assetpack</string>
+		<key>tags</key>
+		<array>
+			<string>BurgerIcon</string>
+		</array>
+	</dict>
+</array>
+</plist>

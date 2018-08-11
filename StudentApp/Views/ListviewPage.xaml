@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:StudentApp.Cells" x:Class="StudentApp.Views.ListviewPage" 
+             Title="Contacts">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar TextChanged="Handle_TextChanged" SearchButtonPressed="Handle_SearchButtonPressed" CancelButtonColor="Teal"  />
+            <Label Text="Not found" x:Name="NotfoundLabel" TextColor="Red" Margin="20" />
+            <ListView x:Name="listview" SeparatorVisibility="Default" SeparatorColor="Red" HasUnevenRows="true" IsPullToRefreshEnabled="true" Refreshing="Handle_Refreshing">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Address}">
+                            <TextCell.ContextActions>
+                                <MenuItem Text="Call" Clicked="Call_Clicked" CommandParameter="{Binding Name}" />
+                                <MenuItem Text="Delete" IsDestructive="true" Clicked="Delete_Clicked" CommandParameter="{Binding .}" />
+                            </TextCell.ContextActions>
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

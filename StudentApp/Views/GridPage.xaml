@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="StudentApp.Views.GridPage" Padding="0,40,0,0" Title="Grid View">
+    <!--    <Grid BackgroundColor="Gray" RowSpacing="5" ColumnSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="1.75*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackLayout BackgroundColor="Red" Grid.Row="0" Grid.Column="0" />
+        <StackLayout BackgroundColor="Purple" Grid.Row="1" Grid.ColumnSpan="2" />
+        <StackLayout BackgroundColor="Olive" Grid.Row="0" Grid.Column="1" />
+        <StackLayout BackgroundColor="Navy" Grid.RowSpan="2" Grid.Column="2" />
+        <StackLayout BackgroundColor="Fuchsia" Grid.Row="2" Grid.Column="0" />
+        <StackLayout BackgroundColor="Blue" Grid.Row="2" Grid.Column="1" />
+        <StackLayout BackgroundColor="Aqua" Grid.Row="2" Grid.Column="2" />
+    </Grid>-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <StackLayout BackgroundColor="Green" Grid.Row="0" Grid.Column="2">
+        </StackLayout>
+        <StackLayout BackgroundColor="Maroon" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label Text="0,0 span of 2" />
+        </StackLayout>
+        <StackLayout BackgroundColor="Lime" Grid.RowSpan="2" Grid.Column="3" />
+        <StackLayout BackgroundColor="Gray" Grid.Row="1" Grid.Column="0" />
+        <StackLayout BackgroundColor="Fuchsia" Grid.Row="1" Grid.Column="1" />
+        <StackLayout BackgroundColor="Blue" Grid.Row="1" Grid.Column="2">
+            <Label Text="I am Blue color" IsVisible="true"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
